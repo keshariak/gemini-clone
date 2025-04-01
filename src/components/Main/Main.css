@@ -85,6 +85,7 @@
     background-color:#f0f4f9 ;
     padding: 10px 20px;
     border-radius: 50px;
+    
 }
 
 .search-box img{
@@ -99,6 +100,8 @@
     outline: none;
     padding: 8px;
     font-size: 18px;
+    width: 100vh;
+    
 }
 .search-box div{
     display: flex;
@@ -185,5 +188,42 @@
     .search-box div{
         gap: 10px;
     }
+    .search-box input{
+        gap: 0;
+        width: 66%;
+    }
+    .main .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+    .main .card{
+        height: 140px;
+        padding: 10px;
+        background-color: #f0f4f9;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .main .greet{
+        margin: 30px 0px;
+        font-size: 30px;
+        color: #c4c7c5;
+        font-weight: 500;
+        padding: 20px;
+    }
+    .main .greet span{
+        background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .result-data p{
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    
+    
     
 }
